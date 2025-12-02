@@ -1157,19 +1157,182 @@ ul {
 
 .about-intro {
     text-align: center;
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto 3rem;
 }
 
 .about-intro h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
+    line-height: 1.3;
 }
 
 .intro-text {
-    font-size: 1.1rem;
-    color: var(--text-light);
+    font-size: 1.2rem;
+    color: var(--text-dark);
     line-height: 1.8;
+}
+
+.founder-feature {
+    text-align: center;
+    margin: 3rem auto;
+    max-width: 600px;
+}
+
+.founder-image-wrapper {
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+}
+
+.founder-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.founder-quote {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    font-style: italic;
+    line-height: 1.6;
+    margin-top: 1.5rem;
+}
+
+.story-full {
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.9;
+    color: var(--text-dark);
+}
+
+.story-full p {
+    margin-bottom: 1.5rem;
+}
+
+.highlight-text {
+    background: linear-gradient(120deg, rgba(212, 175, 55, 0.2) 0%, rgba(212, 175, 55, 0.1) 100%);
+    padding: 1.5rem;
+    border-left: 4px solid var(--primary-color);
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 2rem 0;
+}
+
+.large-text {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+    line-height: 1.6;
+}
+
+.emphasis-text {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin: 2rem 0;
+}
+
+.features-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 1rem;
+    background: var(--background-light);
+    border-radius: 8px;
+}
+
+.feature-item i {
+    color: var(--primary-color);
+    font-size: 1.3rem;
+}
+
+.feature-item span {
+    font-weight: 500;
+    color: var(--secondary-color);
+}
+
+.why-perfumes,
+.lifestyle-hustle {
+    padding: 4rem 0;
+    background: var(--background-light);
+}
+
+.mission-section {
+    padding: 4rem 0;
+    background: white;
+}
+
+.mission-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto 2rem;
+}
+
+.mission-card {
+    text-align: center;
+    padding: 2rem;
+    background: var(--background-light);
+    border-radius: 12px;
+    border-top: 4px solid var(--primary-color);
+}
+
+.mission-card h3 {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+}
+
+.mission-card p {
+    color: var(--text-light);
+}
+
+.signature-section {
+    padding: 4rem 0;
+    background: var(--secondary-color);
+    color: white;
+}
+
+.signature-section .section-title {
+    color: white;
+}
+
+.signature-section .story-full {
+    color: white;
+}
+
+.signature-section .emphasis-text {
+    color: var(--primary-color);
+}
+
+.signature-principles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.principle-badge {
+    background: var(--primary-color);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
 }
 
 .about-grid {
@@ -1731,6 +1894,48 @@ ul {
 
     .packaging-subtitle {
         padding: 0 1rem;
+    }
+
+    .about-intro h2 {
+        font-size: 1.8rem;
+    }
+
+    .founder-feature {
+        max-width: 100%;
+        padding: 0 1rem;
+        margin: 2rem auto;
+    }
+
+    .founder-quote {
+        font-size: 1.2rem;
+        padding: 0 1rem;
+    }
+
+    .story-full {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+
+    .highlight-text {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+
+    .large-text {
+        font-size: 1.1rem;
+    }
+
+    .features-list {
+        grid-template-columns: 1fr;
+    }
+
+    .mission-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .signature-principles {
+        flex-direction: column;
+        align-items: center;
     }
 }
 
