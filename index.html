@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Villa Perfumes - Affordable Luxury Fragrances. Long-lasting scents for men and women at great prices.">
+    <title>Villa Perfumes - Affordable Luxury Fragrances</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <span class="logo-villa">VILLA</span>
+                    <span class="logo-perfumes">PERFUMES</span>
+                </a>
+
+                <div class="nav-menu" id="navMenu">
+                    <a href="index.html" class="nav-link active">Home</a>
+                    <a href="shop.html" class="nav-link">Shop</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+
+                <div class="nav-icons">
+                    <a href="#" class="nav-icon" id="searchBtn">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <a href="#" class="nav-icon cart-icon" id="cartBtn">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </a>
+                    <button class="mobile-menu-btn" id="mobileMenuBtn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Affordable Luxury</h1>
+            <p class="hero-subtitle">Experience premium fragrances without the premium price</p>
+            <div class="hero-buttons">
+                <a href="shop.html" class="btn btn-primary">Shop Now</a>
+                <a href="#collections" class="btn btn-secondary">Explore Collections</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Propositions -->
+    <section class="value-props">
+        <div class="container">
+            <div class="value-grid">
+                <div class="value-item">
+                    <i class="fas fa-clock"></i>
+                    <h3>Long-Lasting Scents</h3>
+                    <p>All-day fragrance that stays with you</p>
+                </div>
+                <div class="value-item">
+                    <i class="fas fa-gem"></i>
+                    <h3>Premium Quality</h3>
+                    <p>Luxury fragrances at affordable prices</p>
+                </div>
+                <div class="value-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Secure Payment</h3>
+                    <p>Safe and trusted checkout process</p>
+                </div>
+                <div class="value-item">
+                    <i class="fas fa-shipping-fast"></i>
+                    <h3>Fast Delivery</h3>
+                    <p>Quick shipping across South Africa</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packaging Section -->
+    <section class="packaging-section">
+        <div class="container">
+            <h2 class="section-title">Premium Villa Packaging</h2>
+            <p class="packaging-subtitle">Every perfume or cologne you order comes beautifully packaged in our signature Villa bottles and boxes</p>
+
+            <div class="packaging-grid">
+                <div class="packaging-item">
+                    <div class="packaging-image-wrapper">
+                        <img src="girls.jpeg" alt="Villa Ladies Packaging" class="packaging-image">
+                    </div>
+                    <h3>For Ladies</h3>
+                    <p>Elegant blue bottle with matching presentation box</p>
+                    <span class="packaging-note">This is the packaging you will receive with any women's fragrance</span>
+                </div>
+
+                <div class="packaging-item">
+                    <div class="packaging-image-wrapper">
+                        <img src="guys.jpeg" alt="Villa Men's Packaging" class="packaging-image">
+                    </div>
+                    <h3>For Men</h3>
+                    <p>Sophisticated black bottle with matching presentation box</p>
+                    <span class="packaging-note">This is the packaging you will receive with any men's fragrance</span>
+                </div>
+            </div>
+
+            <div class="packaging-features">
+                <div class="feature-badge">
+                    <i class="fas fa-box"></i>
+                    <span>Premium Box Included</span>
+                </div>
+                <div class="feature-badge">
+                    <i class="fas fa-certificate"></i>
+                    <span>Authentic Villa Branding</span>
+                </div>
+                <div class="feature-badge">
+                    <i class="fas fa-gift"></i>
+                    <span>Gift-Ready Packaging</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collections -->
+    <section class="collections" id="collections">
+        <div class="container">
+            <h2 class="section-title">Shop by Collection</h2>
+            <div class="collections-grid">
+                <a href="shop.html?category=women" class="collection-card">
+                    <div class="collection-image" style="background-image: url('https://images.unsplash.com/photo-1541643600914-78b084683601?w=600');">
+                        <div class="collection-overlay">
+                            <h3>Women's Fragrances</h3>
+                            <span class="collection-cta">Explore Collection</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="shop.html?category=men" class="collection-card">
+                    <div class="collection-image" style="background-image: url('https://images.unsplash.com/photo-1594035910387-fea47794261f?w=600');">
+                        <div class="collection-overlay">
+                            <h3>Men's Fragrances</h3>
+                            <span class="collection-cta">Explore Collection</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="shop.html?category=rollon" class="collection-card">
+                    <div class="collection-image" style="background-image: url('https://images.unsplash.com/photo-1588405748880-12d1d2a59c5d?w=600');">
+                        <div class="collection-overlay">
+                            <h3>Roll-On Collection</h3>
+                            <span class="collection-cta">Explore Collection</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="shop.html?category=giftsets" class="collection-card">
+                    <div class="collection-image" style="background-image: url('https://images.unsplash.com/photo-1513885535751-8b9238bd345a?w=600');">
+                        <div class="collection-overlay">
+                            <h3>Gift Sets</h3>
+                            <span class="collection-cta">Explore Collection</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Best Sellers -->
+    <section class="best-sellers">
+        <div class="container">
+            <h2 class="section-title">Best Sellers</h2>
+            <div class="products-grid" id="bestSellers">
+                <!-- Products will be loaded via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Amazing quality! The scents last all day and I always get compliments. Villa Perfumes has become my go-to for fragrances."</p>
+                    <p class="testimonial-author">- Sarah M.</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Finally, luxury perfumes that don't break the bank. The delivery was fast and the packaging is beautiful!"</p>
+                    <p class="testimonial-author">- John D.</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"I bought a gift set and my wife absolutely loved it. The variety and quality are outstanding."</p>
+                    <p class="testimonial-author">- Michael K.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated</h2>
+                <p>Subscribe to get special offers, free giveaways, and new arrivals</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Villa Perfumes</h3>
+                    <p>Bringing affordable luxury fragrances to South Africa. Experience premium quality without the premium price.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="shop.html">Shop All</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Returns Policy</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> info@villaperfumes.co.za</li>
+                        <li><i class="fas fa-phone"></i> 072 384 9257</li>
+                        <li><i class="fas fa-map-marker-alt"></i> South Africa</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Villa Perfumes. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Shopping Cart</h3>
+            <button class="close-cart" id="closeCart">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Cart items will be loaded here -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cartTotal">R0.00</span>
+            </div>
+            <button class="btn btn-primary btn-block" id="checkoutBtn">Checkout</button>
+        </div>
+    </div>
+
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <!-- Checkout Modal -->
+    <div class="checkout-modal" id="checkoutModal">
+        <div class="checkout-modal-content">
+            <button class="close-modal" id="closeCheckoutModal">
+                <i class="fas fa-times"></i>
+            </button>
+            <h2>Complete Your Order</h2>
+            <p class="modal-subtitle">Please provide your details to proceed</p>
+
+            <form id="checkoutForm">
+                <div class="form-group">
+                    <label for="customerName">
+                        <i class="fas fa-user"></i> Full Name *
+                    </label>
+                    <input type="text" id="customerName" name="customerName" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label>
+                        <i class="fas fa-shipping-fast"></i> Delivery Method *
+                    </label>
+                    <div class="delivery-options">
+                        <label class="delivery-option">
+                            <input type="radio" name="deliveryMethod" value="PEP Store Collection" required>
+                            <div class="option-content">
+                                <i class="fas fa-store"></i>
+                                <div>
+                                    <strong>PEP Store Collection</strong>
+                                    <p>Collect from your nearest PEP store</p>
+                                </div>
+                            </div>
+                        </label>
+                        <label class="delivery-option">
+                            <input type="radio" name="deliveryMethod" value="Courier Services (Door-to-Door)" required>
+                            <div class="option-content">
+                                <i class="fas fa-truck"></i>
+                                <div>
+                                    <strong>Courier Services</strong>
+                                    <p>Door-to-door delivery</p>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="checkout-summary">
+                    <div class="summary-row">
+                        <span>Total Amount:</span>
+                        <span class="summary-total" id="checkoutTotal">R0.00</span>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-large btn-block">
+                    <i class="fab fa-whatsapp"></i> Complete Order via WhatsApp
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script src="cart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

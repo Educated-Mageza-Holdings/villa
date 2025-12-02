@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Product Details - Villa Perfumes">
+    <title>Product Details - Villa Perfumes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <span class="logo-villa">VILLA</span>
+                    <span class="logo-perfumes">PERFUMES</span>
+                </a>
+
+                <div class="nav-menu" id="navMenu">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="shop.html" class="nav-link">Shop</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+
+                <div class="nav-icons">
+                    <a href="#" class="nav-icon" id="searchBtn">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <a href="#" class="nav-icon cart-icon" id="cartBtn">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </a>
+                    <button class="mobile-menu-btn" id="mobileMenuBtn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="index.html">Home</a>
+            <span>/</span>
+            <a href="shop.html">Shop</a>
+            <span>/</span>
+            <span id="productBreadcrumb">Product</span>
+        </div>
+    </div>
+
+    <!-- Product Detail -->
+    <section class="product-detail">
+        <div class="container">
+            <div class="product-layout">
+                <div class="product-images">
+                    <div class="main-image">
+                        <img id="mainImage" src="https://images.unsplash.com/photo-1541643600914-78b084683601?w=800" alt="Product">
+                    </div>
+                    <div class="thumbnail-images">
+                        <img class="thumbnail active" src="https://images.unsplash.com/photo-1541643600914-78b084683601?w=200" alt="View 1">
+                        <img class="thumbnail" src="https://images.unsplash.com/photo-1594035910387-fea47794261f?w=200" alt="View 2">
+                        <img class="thumbnail" src="https://images.unsplash.com/photo-1588405748880-12d1d2a59c5d?w=200" alt="View 3">
+                    </div>
+                </div>
+
+                <div class="product-info">
+                    <h1 class="product-title" id="productTitle">Luxury Eau de Parfum</h1>
+
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="rating-text">(4.5) 128 reviews</span>
+                    </div>
+
+                    <div class="product-price">
+                        <span class="price" id="productPrice">R399.00</span>
+                        <span class="price-old" id="productPriceOld" style="display: none;">R499.00</span>
+                    </div>
+
+                    <div class="product-description">
+                        <p id="productDescription">Experience the essence of luxury with this captivating fragrance. A perfect blend of sophistication and elegance that lasts all day.</p>
+                    </div>
+
+                    <div class="product-details-grid">
+                        <div class="detail-item">
+                            <i class="fas fa-flask"></i>
+                            <div>
+                                <strong>Intensity</strong>
+                                <span id="productIntensity">Moderate</span>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <strong>Longevity</strong>
+                                <span id="productLongevity">All Day</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="scent-notes">
+                        <h3>Scent Notes</h3>
+                        <div class="notes-grid">
+                            <div class="note">
+                                <strong>Top Notes</strong>
+                                <p id="topNotes">Bergamot, Citrus, Fresh</p>
+                            </div>
+                            <div class="note">
+                                <strong>Heart Notes</strong>
+                                <p id="middleNotes">Jasmine, Rose, Lavender</p>
+                            </div>
+                            <div class="note">
+                                <strong>Base Notes</strong>
+                                <p id="baseNotes">Sandalwood, Musk, Vanilla</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-options">
+                        <div class="option-group">
+                            <label>Size:</label>
+                            <div class="size-options">
+                                <button class="size-btn" data-size="30ml" data-price="299">30ml</button>
+                                <button class="size-btn active" data-size="60ml" data-price="399">60ml</button>
+                                <button class="size-btn" data-size="100ml" data-price="599">100ml</button>
+                            </div>
+                        </div>
+
+                        <div class="option-group">
+                            <label>Quantity:</label>
+                            <div class="quantity-selector">
+                                <button class="qty-btn" id="qtyMinus">-</button>
+                                <input type="number" id="quantity" value="1" min="1" max="10">
+                                <button class="qty-btn" id="qtyPlus">+</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-actions">
+                        <button class="btn btn-primary btn-large" id="addToCartBtn">
+                            <i class="fas fa-shopping-bag"></i> Add to Cart
+                        </button>
+                        <button class="btn btn-secondary btn-large" id="buyNowBtn">
+                            Buy Now
+                        </button>
+                    </div>
+
+                    <div class="product-meta">
+                        <div class="meta-item">
+                            <i class="fas fa-tag"></i>
+                            <span>Category: <span id="productCategory">Women's Fragrance</span></span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-share-alt"></i>
+                            <span>Share:</span>
+                            <div class="share-buttons">
+                                <a href="#"><i class="fab fa-facebook"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Tabs -->
+    <section class="product-tabs">
+        <div class="container">
+            <div class="tabs-nav">
+                <button class="tab-btn active" data-tab="reviews">Reviews</button>
+                <button class="tab-btn" data-tab="shipping">Shipping Info</button>
+                <button class="tab-btn" data-tab="returns">Returns</button>
+            </div>
+
+            <div class="tabs-content">
+                <div class="tab-panel active" id="reviews">
+                    <h3>Customer Reviews</h3>
+                    <div class="reviews-list">
+                        <div class="review-item">
+                            <div class="review-header">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="review-author">Sarah M.</span>
+                                <span class="review-date">2 weeks ago</span>
+                            </div>
+                            <p class="review-text">Absolutely love this fragrance! It lasts all day and smells amazing. Great value for money.</p>
+                        </div>
+                        <div class="review-item">
+                            <div class="review-header">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <span class="review-author">John D.</span>
+                                <span class="review-date">1 month ago</span>
+                            </div>
+                            <p class="review-text">Great scent and packaging. Delivery was quick too. Will definitely order again.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-panel" id="shipping">
+                    <h3>Shipping Information</h3>
+                    <ul class="info-list">
+                        <li><i class="fas fa-check"></i> Free shipping on orders over R500</li>
+                        <li><i class="fas fa-check"></i> Standard delivery: 3-5 business days</li>
+                        <li><i class="fas fa-check"></i> Express delivery available</li>
+                        <li><i class="fas fa-check"></i> Nationwide delivery across South Africa</li>
+                        <li><i class="fas fa-check"></i> Track your order online</li>
+                    </ul>
+                </div>
+
+                <div class="tab-panel" id="returns">
+                    <h3>Returns Policy</h3>
+                    <ul class="info-list">
+                        <li><i class="fas fa-check"></i> 30-day return policy</li>
+                        <li><i class="fas fa-check"></i> Items must be unused and in original packaging</li>
+                        <li><i class="fas fa-check"></i> Full refund or exchange available</li>
+                        <li><i class="fas fa-check"></i> Contact us for return authorization</li>
+                        <li><i class="fas fa-check"></i> Customer satisfaction guaranteed</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Products -->
+    <section class="related-products">
+        <div class="container">
+            <h2 class="section-title">You May Also Like</h2>
+            <div class="products-grid" id="relatedProducts">
+                <!-- Related products will be loaded via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Villa Perfumes</h3>
+                    <p>Bringing affordable luxury fragrances to South Africa. Experience premium quality without the premium price.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="shop.html">Shop All</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Returns Policy</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> info@villaperfumes.co.za</li>
+                        <li><i class="fas fa-phone"></i> 072 384 9257</li>
+                        <li><i class="fas fa-map-marker-alt"></i> South Africa</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Villa Perfumes. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Shopping Cart</h3>
+            <button class="close-cart" id="closeCart">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Cart items will be loaded here -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cartTotal">R0.00</span>
+            </div>
+            <button class="btn btn-primary btn-block" id="checkoutBtn">Checkout</button>
+        </div>
+    </div>
+
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <!-- Checkout Modal -->
+    <div class="checkout-modal" id="checkoutModal">
+        <div class="checkout-modal-content">
+            <button class="close-modal" id="closeCheckoutModal">
+                <i class="fas fa-times"></i>
+            </button>
+            <h2>Complete Your Order</h2>
+            <p class="modal-subtitle">Please provide your details to proceed</p>
+
+            <form id="checkoutForm">
+                <div class="form-group">
+                    <label for="customerName">
+                        <i class="fas fa-user"></i> Full Name *
+                    </label>
+                    <input type="text" id="customerName" name="customerName" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label>
+                        <i class="fas fa-shipping-fast"></i> Delivery Method *
+                    </label>
+                    <div class="delivery-options">
+                        <label class="delivery-option">
+                            <input type="radio" name="deliveryMethod" value="PEP Store Collection" required>
+                            <div class="option-content">
+                                <i class="fas fa-store"></i>
+                                <div>
+                                    <strong>PEP Store Collection</strong>
+                                    <p>Collect from your nearest PEP store</p>
+                                </div>
+                            </div>
+                        </label>
+                        <label class="delivery-option">
+                            <input type="radio" name="deliveryMethod" value="Courier Services (Door-to-Door)" required>
+                            <div class="option-content">
+                                <i class="fas fa-truck"></i>
+                                <div>
+                                    <strong>Courier Services</strong>
+                                    <p>Door-to-door delivery</p>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="checkout-summary">
+                    <div class="summary-row">
+                        <span>Total Amount:</span>
+                        <span class="summary-total" id="checkoutTotal">R0.00</span>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-large btn-block">
+                    <i class="fab fa-whatsapp"></i> Complete Order via WhatsApp
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script src="cart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
